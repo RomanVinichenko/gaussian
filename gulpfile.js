@@ -18,6 +18,7 @@ const browsersync = () => {
     });
 };
 
+
 const watching = () => {
     watch(['app/*.html']).on('change', browserSync.reload);
     watch(['app/scss/**/*.scss'], styles);
