@@ -21,7 +21,7 @@ const browserSync = require('browser-sync').create(),
 const browsersync = () => {
     browserSync.init({
         server: {
-            baseDir: 'dist/',
+            baseDir: 'dist',
         },
         notify: false,
     });
@@ -32,7 +32,7 @@ const watching = () => {
     watch(['app/*.html'], fileInclude);
     watch(['app/template/*.html'], fileInclude);
     watch(['app/scss/**/*.scss', 'app/scss/**/*.sass'], styles);
-    watch(['app/js/*.js'], scripts);
+    watch(['app/js/*.js', 'app/js/**/*.js'], scripts);
     watch(['dist/*.html']).on('change', browserSync.reload);
 };
 
@@ -79,7 +79,7 @@ const fileInclude = () =>{
             prefix: '@@',
             basepath: '@file'
         }))
-        .pipe(dest('dist/'))
+        .pipe(dest('dist/html'))
         .pipe(browserSync.stream());// необходимо для авто перезагрузки браузера
 };
 

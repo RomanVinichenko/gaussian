@@ -1,0 +1,110 @@
+#footer
+  background-color: $black
+  padding-top: get-vw(40px)
+  .main_nav
+    padding-bottom: get-vw(40px)
+    .subs_form
+      margin-bottom: auto
+    .social
+      +flex(center, flex-start)
+      margin: 0 -4px
+      margin-top: auto
+      .social-item
+        padding: 0 4px
+        display: block
+        a
+          display: block
+
+    .nav_title
+      margin-bottom: get-vw(12px)
+      flex: 0 0 100%
+      p
+        +font_12
+        text-transform: uppercase
+        color: $white
+    .text_d_gray
+      margin-bottom: 8px
+
+    .form_group
+      position: relative
+      .wpcf7-form-control-wrap
+        display: block
+        width: 100%
+
+      .form_control
+        +font_12
+        color: $gray_dark
+        border: none
+        border-bottom: 1px solid $gray_dark
+        padding: 8px 0
+        display: block
+        width: 100%
+        background-color: transparent
+        &::placeholder
+          color: $gray_dark
+        &.wpcf7-not-valid, &.error
+          margin-bottom: 0
+          border-color: red
+      .wpcf7-not-valid-tip, .error
+        display: block
+        +font_14
+        line-height: 1.43
+        color: red
+        padding-left: 16px
+        margin-top: 0
+        margin-bottom: 12px
+      .wpcf7-submit
+        position: absolute
+        background-color: transparent
+        color: transparent
+        width: 16px
+        height: 16px
+        background-image: url('../img/icon/Envelope.svg')
+        background-repeat: no-repeat
+        background-position: center
+        top: 8px
+        right: 0
+        border: none
+    .footer_nav
+      +flex(flex-start, space-between)
+      .nav_title
+        .icon
+          display: none
+      .footer-navbar
+        .nav-item
+          display: block
+          .nav-link
+            color: $gray_dark
+            +font_14
+            text-decoration: none
+        .divider
+          margin: get-vw(6px) 0
+          color: $white
+  .bottom-nav
+    border-top: 1px solid rgba(89, 101, 123, 0.32)
+    padding: get-vw(16px) 0
+    +flex(center, flex-start)
+    p
+      margin-right: auto
+      +font_12
+      color: $gray_dark
+    .copy-navbar
+
+      +flex(center, flex-start)
+      margin: 0 -12px
+      .nav-item
+        .nav-link
+          color: $white
+          +font_12
+          text-decoration: none
+          padding: 6px 12px
+
+
+
+
+
+
+
+
+
+

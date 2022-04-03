@@ -1,0 +1,62 @@
+html
+  margin-top: 0 !important
+  *
+    box-sizing: border-box
+body
+  +font_16
+  background-color: $white
+  color: $gray_dark
+  min-height: 100vh
+  --p_right: 0px
+  overflow-x: hidden
+  display: flex
+  flex-direction: column
+  .main
+    flex: 1 0 auto
+    background-color: $white
+    //main
+    //  margin-top: 128px
+    //  @media (max-width: 1200px)
+    //    margin-top: 120px
+    //  @media (max-width: 767px)
+    //    margin-top: 58px
+    //    overflow-x: hidden
+  #footer
+    flex-shrink: 0
+  &.no-scroll
+    max-height: 100vh
+    width: 100vw
+    -webkit-overflow-scrolling: touch
+    overflow-y: hidden
+    position: fixed
+  &.open-header
+    max-height: 100vh
+    width: 100vw
+    -webkit-overflow-scrolling: touch
+    overflow-y: hidden
+    position: fixed
+
+
+
+
+.text_center
+  text-align: center
+
+.upper
+  text-transform: uppercase
+
+
+
+
+input, button, a
+  &:focus
+    outline: none
+
+.pointer
+  cursor: pointer
+*::selection
+  background: rgba(107, 124, 147, 0.50)
+*::-moz-selection
+  background: rgba(107, 124, 147, 0.50)
+*
+  -webkit-tap-highlight-color: transparent

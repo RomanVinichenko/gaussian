@@ -1,0 +1,519 @@
+html, body
+  margin: 0
+  height: 100%
+transition-group, transition
+  display: none !important
+.container
+  max-width: calc(100% - 8px)
+  @media (min-width: 576px)
+    max-width: calc(100% - 20px)
+  @media (min-width: 768px)
+    max-width: calc(100% - 20px)
+  @media (min-width: 992px)
+    max-width: calc(100% - 46px)
+  @media (min-width: 1200px)
+    max-width: calc(100% - 46px)
+  @media (min-width: 1400px)
+    max-width: 1248px
+  @media (min-width: 1800px)
+    max-width: get-vw(1248px)
+
+
+.formatted_content
+  table
+    p
+      margin-bottom: 0
+  //  border-width: 0
+  //  &[border="11"]
+  //    border-width: 11px
+  //    tr
+  //      border-width: 11px
+  //      border-right: none
+  //      border-bottom: none
+  //    td
+  //      border-width: 11px
+  //      border-top: none
+  //      border-left: none
+  //  &[border="10"]
+  //    border-width: 10px
+  //    tr
+  //      border-width: 11px
+  //      border-right: none
+  //      border-bottom: none
+  //    td
+  //      border-width: 11px
+  //      border-top: none
+  //      border-left: none
+  //  &[border="9"]
+  //    border-width: 9px
+  //    tr
+  //      border-width: 11px
+  //      border-right: none
+  //      border-bottom: none
+  //    td
+  //      border-width: 11px
+  //      border-top: none
+  //      border-left: none
+  //  &[border="8"]
+  //    border-width: 8px
+  //    tr
+  //      border-width: 11px
+  //      border-right: none
+  //      border-bottom: none
+  //    td
+  //      border-width: 11px
+  //      border-top: none
+  //      border-left: none
+  //  &[border="7"]
+  //    border-width: 7px
+  //  &[border="6"]
+  //    border-width: 6px
+  //  &[border="5"]
+  //    border-width: 5px
+  //  &[border="4"]
+  //    border-width: 4px
+  //  &[border='3']
+  //    border-width: 3px
+  //  &[border='2']
+  //    border-width: 2px
+  //  &[border='1']
+  //    border-width: 1px
+  //    tr
+  //      border-width: 1px
+  //      border-right: none
+  //      border-bottom: none
+  //    td
+  //      border-width: 1px
+  //      border-top: none
+  //      border-left: none
+
+  p
+    +font_16
+    color: $gray_dark
+    margin-bottom: get-vw(18px)
+    @media (max-width: 991px)
+      margin-bottom: 16px
+    &.text_black
+        color: $black
+  strong, b
+    +f_600
+    color: $black
+  ul, ol
+    padding-bottom: get-vw(24px)
+    list-style: disc
+    padding-left: 24px
+    br
+      display: none
+    li
+      position: relative
+
+      margin-bottom: get-vw(10px)
+      //margin-left: 16px
+      +font_16
+      ul
+        margin-top: 10px
+        padding-left: 16px
+      ul li
+        margin-left: 0
+      @media (max-width: 1779px)
+        margin-bottom: 10px
+      &:first-child
+        margin-top: 0
+        padding-top: 0
+      &:last-child
+        margin-bottom: 0
+        padding-bottom: 0
+      strong
+        +font_16__600
+        color: $black
+        margin-bottom: get-vw(8px)
+        //display: block
+    &.check
+      padding-left: 32px
+      //&:before
+      //  width: 16px
+      //  height: 16px
+      //  top: 2px
+      //  background-color: transparent
+      //  background-image: url('/wp-content/themes/celerart/img/icon/check_2.svg')
+      //  background-size: cover
+      //  background-position: center
+  ol
+    list-style: decimal
+  //.audio-inline
+  //  width: 100%
+  //  max-width: 600px
+  //  padding: get-vw( 24px) get-vw(32px)
+  //  background-color: $l_gray
+  //  margin-bottom: get-vw(32px)
+  //  margin-top: get-vw(32px)
+  //  @media (max-width: 1200px)
+  //    margin-bottom: 32px
+  //    margin-top: 32px
+  //    padding: 24px 32px
+  //  @media (max-width: 767px)
+  //    margin-bottom: 32px
+  //    margin-top: 32px
+  //    padding: 24px 28px
+
+  //check_2.svg
+
+
+  blockquote
+    margin: get-vw(56px) 0
+    padding: get-vw(48px) 0
+    border-top: 1px solid $gray_dark
+    border-bottom: 1px solid $gray_dark
+    display: block
+    p
+      +font_24
+      margin-bottom: 0
+      color: $black
+
+
+  img
+    max-width: 100%
+    height: auto
+    &.alignright
+      float: right
+    &.alignleft
+      float: left
+  em
+    font-style: italic
+  h6
+    +font_24
+    color: $black
+    margin-top: get-vw(60px)
+    line-height: 1.6
+    @media(max-width: 1200px)
+      margin-top: 60px
+  h5
+    +font_32
+    color: $black
+    margin-top: get-vw(60px)
+    line-height: 1.6
+    //letter-spacing: -1px
+    @media(max-width: 1200px)
+      margin-top: 60px
+  h4
+    +font_40
+    color: $black
+    margin-top: get-vw(24px)
+    margin-bottom: get-vw(24px)
+    line-height: 1.2
+    @media(max-width: 1200px)
+      margin-top: 24px
+      margin-bottom: 24px
+  h3
+    +font_48
+    color: $black
+    margin-top: get-vw(24px)
+    margin-bottom: get-vw(16px)
+    line-height: 1.2
+    @media(max-width: 1200px)
+      margin-top: 24px
+      margin-bottom: 16px
+  h2
+    +font_56
+    color: $black
+    margin-top: get-vw(32px)
+    margin-bottom: get-vw(24px)
+    line-height: 1.2
+    @media(max-width: 1200px)
+      margin-top: 32px
+      margin-bottom: 24px
+  h1
+    +font_64
+    color: $black
+    margin-top: get-vw(32px)
+    margin-bottom: get-vw(24px)
+    line-height: 1.16
+    @media(max-width: 1200px)
+      margin-top: 32px
+      margin-bottom: 24px
+  hr
+    margin-top: get-vw(56px)
+    margin-bottom: get-vw(56px)
+    box-shadow: none
+    border: none
+    height: 1px
+    background-color: #C8D9E0
+    @media(max-width: 1200px)
+      margin-top: 48px
+      margin-bottom: 48px
+
+    @media(max-width: 767px)
+      margin-top: 32px
+      margin-bottom: 32px
+
+  iframe
+    min-height: get-vw(800px)
+  a
+    color: #0645ad
+    text-decoration: underline
+    +transition(0.3)
+    &:hover
+      text-decoration: underline
+  >*:first-child
+    margin-top: 0
+    padding-top: 0
+  >*:last-child
+    margin-bottom: 0
+    padding-bottom: 0
+
+.wpcf7
+  br
+    display: none
+  form.sent .wpcf7-response-output
+    display: none !important
+  form.invalid .wpcf7-response-output, form.unaccepted .wpcf7-response-output
+    position: relative
+    color: red
+    padding: 0
+    margin: 0
+    margin-top: get-vw(48px)
+    border: none
+    +font_14
+  .ajax-loader, .wpcf7-spinner
+    display: none !important
+//.form_group
+//  position: relative
+//  .wpcf7-form-control-wrap
+//    display: block
+//    width: 100%
+//  label
+//    color: $grey
+//    position: absolute
+//    top: 0
+//    padding: 0 5px
+//    left: 11px
+//    +font_14
+//    line-height: 1
+//    z-index: 2
+//    background-color: $white
+//  .form_control
+//    +font_14
+//    color: $black
+//    border: 1px solid $m_gray
+//    padding: 18px 16px
+//    display: block
+//    width: 100%
+//    background-color: $white
+//    margin-bottom: 32px
+//    &.wpcf7-not-valid, &.error
+//      margin-bottom: 0
+//      border-color: $error
+//  .wpcf7-not-valid-tip, .error
+//    display: block
+//    +font_14
+//    line-height: 1.43
+//    color: $error
+//    padding-left: 16px
+//    margin-top: 0
+//    margin-bottom: 12px
+//.check_group
+//  .wpcf7-list-item
+//    margin: 0
+//  label
+//    position: relative
+//    input
+//      position: absolute
+//      top: 0
+//      left: 0
+//      width: 20px
+//      height: 20px
+//      opacity: 0
+//      z-index: 2
+//    .wpcf7-list-item-label
+//      padding-left: 30px
+//      color: $black
+//      margin: 0
+//      +font_14
+//      &:before
+//        display: block
+//        position: absolute
+//        top: 0
+//        left: 0
+//        content: ''
+//        width: 20px
+//        height: 20px
+//        border: 1px solid $d_gray
+//        background-color: transparent
+//      &:after
+//        display: block
+//        position: absolute
+//        top: 0
+//        left: 0
+//        content: ''
+//        width: 20px
+//        height: 20px
+//        border: 1px solid $red
+//        background-color: $red
+//        background-image: url('/wp-content/themes/celerart/img/icon/checkbox.svg')
+//        background-position: center
+//        background-repeat: no-repeat
+//        opacity: 0
+//        +transition(0.3)
+//    input:checked + .wpcf7-list-item-label:after
+//      opacity: 1
+//.select-group
+//  .form_select
+//    position: relative
+//    z-index: 3
+//    .main_select
+//      button
+//        padding: 18px 16px
+//        +flex(center, flex-start)
+//        border: 1px solid $m_gray
+//        margin-bottom: 32px
+//        background-color: $white
+//        width: 100%
+//        @media (min-width: 1920px)
+//          margin-bottom: get-vw(32px)
+//        @media (max-width: 1280px)
+//          padding: 17px 16px
+//
+//        .text
+//          max-width: calc(100% - 48px)
+//          text-overflow: ellipsis
+//          overflow: hidden
+//          white-space: nowrap
+//          display: inline-block
+//          margin-right: 8px
+//          +font_14
+//        .arrow
+//          margin-left: auto
+//          display: inline-block
+//          width: 16px
+//          height: 16px
+//          content: ''
+//          background-image: url('/wp-content/themes/celerart/img/icon/arrow.svg')
+//          background-size: cover
+//        &.open
+//          border: 1px solid $d_gray
+//          .arrow
+//            transform: rotate(180deg)
+//    //margin-left: 8px
+//    .drop_wrapper
+//      position: absolute
+//      top: calc(100% + 8px)
+//      left: 0
+//      width: 100%
+//      overflow: hidden
+//      border: 1px solid $d_gray
+//      box-shadow: 0 0 24px rgba(0, 0, 0, 0.16)
+//      z-index: 2
+//      background-color: $white
+//    .main_drop
+//      width: calc(100% + 14px)
+//      overflow-x: hidden
+//      overflow-y: scroll
+//      .drop_list
+//        padding: 0 12px
+//        display: block
+//        .select-item
+//          +font_14
+//          color: $black
+//          background-color: transparent
+//          border: none
+//          border-bottom: 1px solid #F6F6F6
+//          padding: 12px 0
+//          display: block
+//          width: 100%
+//          text-align: left
+//
+//  &.open
+//    z-index: 10
+//  label
+//    z-index: 4
+//  select
+//    display: none
+//  .wpcf7-not-valid-tip
+//    margin-top: -30px
+
+
+
+//.file_group
+//  +flex(center, flex-start)
+//  position: relative
+//  .label
+//    display: flex
+//    //width: 100%
+//
+//    +font_14
+//    color: $black
+//
+//  label
+//    background-image: url('/wp-content/themes/celerart/img/icon/file.svg')
+//    background-color: $white
+//    display: block
+//    padding: get-vw(10px) 24px get-vw(10px) 56px
+//    height: get-vw(56px)
+//    background-position: 24px center
+//    background-size: 24px
+//    background-repeat: no-repeat
+//    +flex(center, flex-start)
+//    border: 1px solid $red
+//    color: $red
+//    +font_16__500
+//    cursor: pointer
+//    transition: border-color,color 0.3s linear
+//    @media (max-width: 1200px)
+//      height: 56px
+//    @media (max-width: 767px)
+//      background-image: none
+//    &:hover
+//      color: $black
+//      background-image: url('/wp-content/themes/celerart/img/icon/file-black.svg')
+//      border: 1px solid $black
+//      @media (max-width: 767px)
+//        background-image: none
+//  .file-chosen
+//    margin-left: 10px
+//    margin-bottom: get-vw(16px)
+//    margin-top: get-vw(16px)
+//  input
+//    position: absolute
+//    top: 0
+//    left: 0
+//    width: 100%
+//    display: block
+//    height: 100%
+//    opacity: 0
+
+#error-page
+  .breadcrumbs_part
+    margin-bottom: 0
+  .main_error
+    padding: get-vw(56px) 0
+    text-align: center
+    @media(max-width: 1200px)
+      padding: 56px 0
+    @media(max-width: 767px)
+      padding: 40px 0
+    .text_d_gray
+      margin-bottom: get-vw(32px)
+      @media(max-width: 1200px)
+        margin-bottom: 40px
+      @media(max-width: 767px)
+        margin-bottom: 24px
+    .font_56
+      +fontSize(56px)
+      +f_600
+      margin-bottom: get-vw(32px)
+      @media(max-width: 1200px)
+        margin-bottom: 40px
+        font-size: 40px
+      @media(max-width: 767px)
+        margin-bottom: 24px
+
+
+
+
+
+
+
+
+
+
+

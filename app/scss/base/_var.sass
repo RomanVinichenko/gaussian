@@ -1,0 +1,26 @@
+$gray_dark: #59657B
+$grey: #97A1B4
+$black:  #09091C
+$grey_light: #FAFAFA
+$white: #FFFFFF
+$blue: #051AD0
+
+
+$vw-viewport: 1920
+
+@function get-vw($font)
+  $vw-context:  ($vw-viewport * 0.01 * 1px)
+  @return $font / $vw-context * 1vw
+  @return $font
+
+
+@mixin flex($align, $justify)
+  display: flex
+  align-items: $align
+  justify-content: $justify
+  flex-wrap: wrap
+  flex-direction: row
+
+
+=transition($time)
+  transition: all $time+s linear

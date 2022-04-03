@@ -6,7 +6,11 @@
 # testing
 /coverage
 
-/dist
+/dist/css/style.css
+/dist/css/style.css.map
+/dist/js/bundle.js
+dist/html
+
 
 # misc
 .DS_Store

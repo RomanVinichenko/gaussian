@@ -1,5 +1,23 @@
 @import "base/variables";
-@import "libs/reset";
+//@import "libs/reset";
+@import '../../node_modules/swiper/swiper';
+@import "base/var";
+@import "base/Util_Font";
+@import "base/util_helpers";
+@import "base/Util_Button";
+@import "base/util_animation";
+@import "base/util_main";
 
-/* @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"); */
+
+@import "blocks/Util_Header";
+@import "blocks/Util_Footer";
+
+
+@import "pages/home";
+
+
+
+
+
+
 

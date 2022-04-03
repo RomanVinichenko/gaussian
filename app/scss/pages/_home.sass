@@ -1,0 +1,209 @@
+#home
+  width: 100%
+  .start_slider
+    overflow-x: hidden
+    .swiper-slide
+
+      .layer
+        min-height: 100vh
+        background-position: center
+        background-size: cover
+        +flex(flex-end, flex-start)
+        .slider_pagination
+          +flex(center, flex-start)
+          span
+            margin-right: 8px
+            display: block
+            width: 8px
+            height: 8px
+            background-color: rgba(255, 255, 255, 0.25)
+            border-radius: 50%
+            &.active
+              width: 10px
+              height: 10px
+              background-color: rgba(255, 255, 255, 1)
+
+
+        .slide_content
+          max-width: 50%
+          padding-bottom: get-vw(80px)
+          .text
+            margin-top: get-vw(24px)
+            .font_64
+              margin-bottom: get-vw(16px)
+            .font_16
+              margin-bottom: get-vw(24px)
+  .grid
+    padding: get-vw(120px) 0
+    .sect_title
+      margin-bottom: get-vw(64px)
+      .font_16__600
+        margin-bottom: get-vw(16px)
+    .grid_item
+      margin-bottom: get-vw(64px)
+      .icon
+        margin-bottom: get-vw(16px)
+      .font_20
+        +flex(center, flex-start)
+        margin-bottom: get-vw(16px)
+        span
+          margin-right: 12px
+      ul
+        li
+          padding: 4px 0 4px 20px
+          position: relative
+          &:before
+            position: absolute
+            top: 8px
+            left: 0
+            content: ''
+            display: block
+            width: 0
+            height: 0
+            border-left: 5px solid transparent
+            border-right: 5px solid transparent
+            transform: rotate(-45deg)
+            border-bottom: 5px solid $blue
+  .news-slider
+    background-color: $grey_light
+    overflow: hidden
+    padding: get-vw(120px) 0
+    .sect_title
+      margin-bottom: get-vw(40px)
+      .font_16__600
+        margin-bottom: get-vw(16px)
+    .swiper-slide
+      padding: 0 8px
+      article
+        figure
+          display: block
+          margin-bottom: get-vw(16px)
+          img
+            width: 100%
+
+        a
+          text-decoration: none
+          +transition(0.3)
+          &:hover
+            color: $blue
+        .font_12__600
+          margin-top: get-vw(16px)
+    .news_nav
+      margin-top: get-vw(40px)
+      +flex(center, flex-start)
+      .news-scrollbar
+        flex-grow: 1
+        height: 2px
+        background-color: $grey_light
+        position: relative
+        -ms-touch-action: none
+        .swiper-scrollbar-drag
+          height: 2px
+          background-color: $black
+          width: 100%
+          position: relative
+          left: 0
+          top: 0
+
+      .btns
+        flex-grow: 0
+        margin-left: get-vw(40px)
+  .big_slider
+    overflow: hidden
+    padding: get-vw(120px) 0
+    .sect_title
+      margin-bottom: get-vw(64px)
+      text-align: center
+      .font_48
+        margin-bottom: get-vw(16px)
+    .slider_tab_nav
+      border-bottom: 2px solid rgba(9, 9, 28, 0.05)
+      margin-bottom: get-vw(32px)
+      ul
+        +flex(center, space-between)
+        .nav_item
+          button
+            padding: get-vw(16px)
+            text-align: center
+            background-color: transparent
+            border: none
+            border-bottom: 2px solid transparent
+            margin-bottom: -2px
+            +font_12
+            color: $grey
+            +transition(0.3)
+            text-transform: uppercase
+          &.active button
+            color: $black
+            border-bottom: 2px solid $blue
+    .swiper
+      .swiper-slide
+        padding: 0 8px
+      .slide_wrapper
+        position: relative
+        .img
+          img
+            max-width: 100%
+        .layer
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          padding-bottom: get-vw(24px)
+          height: 100%
+          +flex(flex-end, center)
+    .slider_navs
+      margin-top: get-vw(32px)
+      .big-scrollbar
+        height: 2px
+        background-color: $grey_light
+        position: relative
+        -ms-touch-action: none
+        .swiper-scrollbar-drag
+          height: 2px
+          background-color: $black
+          width: 100%
+          position: relative
+          left: 0
+          top: 0
+      .slider_count
+        margin-top: get-vw(24px)
+        text-align: center
+        +font_12
+        color: $black
+      .btns_nav
+        margin-bottom: 24px
+        margin-top: 4px
+        +flex(center, center)
+        .nav_btn
+          padding: 0
+          margin: 0
+          background-color: transparent
+          width: 8px
+          height: 8px
+          border: none
+          +flex(center, cenrter)
+
+      .btns
+        text-align: center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

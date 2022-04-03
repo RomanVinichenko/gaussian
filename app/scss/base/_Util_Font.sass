@@ -1,0 +1,198 @@
+
+@mixin fontSize($size)
+  font-size: $size
+  font-size: get-vw($size)
+
+=f_600
+  font-family: 'Roboto', sans-serif
+  font-weight: 600
+
+=f_400
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+
+
+=font_64
+  font-size: 56px
+  line-height: 1.12
+  +f_600
+  letter-spacing: -0.02em
+  @media (min-width: 1900px)
+    +fontSize(64px)
+  @media (max-width: 767px)
+    font-size: 40px
+    line-height: 1.2
+
+=font_56
+  font-size: 48px
+  line-height: 1.14
+  +f_600
+  letter-spacing: -0.02em
+  @media (min-width: 1900px)
+    +fontSize(56px)
+  @media (max-width: 767px)
+    font-size: 36px
+    line-height: 1.22
+
+=font_48
+  font-size: 42px
+  line-height: 1.16
+  +f_600
+  letter-spacing: -0.02em
+  @media (min-width: 1900px)
+    +fontSize(42px)
+  @media (max-width: 767px)
+    font-size: 32px
+    line-height: 1.26
+
+=font_40
+  font-size: 36px
+  line-height: 1.2
+  +f_600
+  letter-spacing: -0.02em
+  @media (min-width: 1900px)
+    +fontSize(40px)
+  @media (max-width: 767px)
+    font-size: 28px
+    line-height: 1.3
+
+=font_32
+  font-size: 28px
+  line-height: 1.24
+  +f_600
+  letter-spacing: -0.02em
+  @media (min-width: 1900px)
+    +fontSize(32px)
+  @media (max-width: 767px)
+    font-size: 26px
+    line-height: 1.32
+
+=font_32
+  font-size: 28px
+  line-height: 1.24
+  +f_600
+  letter-spacing: -0.02em
+  @media (min-width: 1900px)
+    +fontSize(32px)
+  @media (max-width: 767px)
+    font-size: 26px
+    line-height: 1.32
+
+=font_24
+  font-size: 24px
+  line-height: 1.32
+  +f_600
+  letter-spacing: -0.02em
+  @media (min-width: 1900px)
+    +fontSize(24px)
+  @media (max-width: 767px)
+    font-size: 22px
+    line-height: 1.36
+
+=font_20
+  font-size: 20px
+  line-height: 1.4
+  +f_600
+  letter-spacing: -0.02em
+  @media (min-width: 1900px)
+    +fontSize(20px)
+  @media (max-width: 767px)
+    font-size: 18px
+    line-height: 1.42
+
+=font_16__600
+  font-size: 16px
+  line-height: 1.52
+  +f_600
+  @media (min-width: 1900px)
+    +fontSize(16px)
+
+=font_16
+  +font_16__600
+  +f_400
+
+=font_14__600
+  font-size: 14px
+  line-height: 1.7
+  +f_600
+  @media (min-width: 1900px)
+    +fontSize(14px)
+
+=font_14
+  +font_14__600
+  +f_400
+  +f_400
+
+=font_12__600
+  font-size: 12px
+  line-height: 1.7
+  +f_600
+  @media (min-width: 1900px)
+    +fontSize(12px)
+
+=font_12
+  +font_12__600
+  +f_400
+
+.text_gray_dark
+  color: $gray_dark
+.text_grey
+  color: $grey
+.text_black
+  color: $black
+.text_grey_light
+  color: $grey_light
+.text_white
+  color: $white
+.text_blue
+  color: $blue
+
+
+.font_64
+  +font_64
+.font_56
+  +font_56
+.font_48
+  +font_48
+.font_40
+  +font_40
+.font_32
+  +font_32
+.font_32
+  +font_32
+.font_24
+  +font_24
+.font_20
+  +font_20
+.font_16__600
+  +font_16__600
+.font_16
+  +font_16
+.font_14__600
+  +font_14__600
+.font_14
+  +font_14
+.font_12__600
+  +font_12__600
+.font_12
+  +font_12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
