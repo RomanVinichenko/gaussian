@@ -4,6 +4,8 @@ import {mainClass} from "./mainClass";
 import {Header} from "./part/header";
 import {Footer} from "./part/Footer";
 import {Home} from "./page/Home";
+import {Products} from "./page/products";
+import {Support} from "./page/Support";
 
 const initApp = () => {
 
@@ -15,8 +17,10 @@ const initApp = () => {
     if(document.getElementById('home')){
         APP.Page = new Home()
 
-    } else if(document.getElementById('ask_expert_archive-page')){
-        APP.Page = ''
+    } else if(document.getElementById('product')){
+        APP.Page = new Products()
+    } else if(document.getElementById('support')){
+        APP.Page = new Support()
     }
 
 }

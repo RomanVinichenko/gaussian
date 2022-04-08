@@ -1,0 +1,106 @@
+#product
+  .product_nav
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    z-index: 5
+    background: rgba(255, 255, 255, 0.72)
+    backdrop-filter: blur(80px)
+    .nav_list
+      +flex(center, center)
+      .nav_item
+        display: block
+        margin: 0 get-vw(25px)
+        .nav_link
+          display: block
+          padding-bottom: get-vw(8px)
+          padding-top: get-vw(9px)
+          border-bottom: 2px solid transparent
+          text-decoration: none
+
+          .img
+            text-align: center
+            width: 32px
+            position: relative
+            margin: 0 auto
+            display: block
+            img
+              display: block
+              +transition(0.3)
+              &.hover
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 2
+                opacity: 0
+          .text
+            +font_12__600
+            color: $gray_dark
+            text-align: center
+            +transition(0.3)
+          &:hover
+            .img
+              img
+                opacity: 0
+                &.hover
+                  opacity: 1
+            .text
+              color: $blue
+        &.current .nav_link
+          border-bottom: 2px solid $blue
+  .product_item
+    min-height: 100vh
+    background-position: center center
+    background-size: cover
+    background-repeat: no-repeat
+    scroll-snap-align: start
+    .content_wrapper
+      height: 100vh
+      +flex(center, center)
+      .item_content
+        text-align: center
+        .font_56
+          margin-bottom: get-vw(8px)
+          opacity: 0
+          transform: translateY(-10px)
+        .font_14
+          margin-bottom: get-vw(16px)
+          opacity: 0
+          transform: translateY(-10px)
+        .additional
+          +flex(center, center)
+          margin-bottom: get-vw(32px)
+          .item
+            width: 32px
+            height: 32px
+            margin: 0 11px
+            border: 1px solid rgba(255, 255, 255, 0.25)
+            border-radius: 50%
+            opacity: 0
+            transform: translateX(-10px)
+
+            @media (min-width: 1900px)
+              width: get-vw(32px)
+              height: get-vw(32px)
+              margin: 0 get-vw(11px)
+            +flex(center, center)
+        .btns
+          opacity: 0
+          transform: translateY(-10px)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

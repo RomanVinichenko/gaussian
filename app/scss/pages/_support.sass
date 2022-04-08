@@ -1,0 +1,134 @@
+#support
+  .title_section
+    padding-top: get-vw(192px)
+    margin-bottom: get-vw(72px)
+    .title_row
+      +flex(flex-end, space-between)
+      padding-bottom: get-vw(45px)
+      border-bottom: 1px solid rgba(89, 101, 123, 0.32)
+    .subtitle
+      margin-top: get-vw(40px)
+  .tab_list
+    padding-bottom: get-vw(120px)
+  .tab_btns
+    padding-bottom: 10px
+    min-width: 100%
+    @media (max-width: 991px)
+      overflow-x: scroll
+  .tab_nav
+    .nav_items
+      display: block
+      .nav_btn
+        display: block
+        margin-bottom: get-vw(24px)
+        .tab_toggle
+          background-color: transparent
+          border: none
+          +font_20
+          color: $gray_dark
+          +flex(flex-start, flex-start)
+          .count
+            +font_12__600
+            margin-left: get-vw(9px)
+          &.active
+            color: $blue
+          &:hover
+            text-decoration: none
+            color: $blue
+    //.tab_wrapper
+    //  +flex(center, flex-start)
+    //  flex-wrap: nowrap
+    //  border-bottom: 1px solid #CFCFCF
+    //  width: fit-content
+    //  min-width: 100%
+    //.tab_toggle
+    //  +font_18__500
+    //  padding: get-vw(8px) 0
+    //  margin-right: get-vw(24px)
+    //  +transition(0.3)
+    //  display: block
+    //  text-decoration: none
+    //  background: transparent
+    //  border-radius: 0
+    //  color: $black
+    //  border: none
+    //  border-bottom: 2px solid transparent
+    //  white-space: pre
+    //  margin-bottom: -1px
+    //  @media (max-width: 991px)
+    //    margin-right: 24px
+    //    +font_16__500
+    //  &.active
+    //    color: $orange
+    //    border-bottom: 2px solid $orange
+    //  &:hover
+    //    text-decoration: none
+    //    color: $orange
+  .tab_content
+    .tab_item
+      overflow: hidden
+      height: 0
+      &.document_list
+        .item
+          +flex(center, flex-start)
+          padding-bottom: get-vw(32px)
+          margin-bottom: get-vw(32px)
+          border-bottom: 1px solid rgba(89, 101, 123, 0.32)
+          &:last-child
+            margin-bottom: 0
+          .left_side
+            flex: 0 0 calc(100% - 200px)
+            max-width: calc(100% - 200px)
+            .font_24
+              margin-bottom: get-vw(14px)
+            .font_16
+              +flex(center, flex-start)
+              span
+                margin: 0 6px
+          .right_side
+            flex: 0 0 200px
+            max-width: 200px
+      &.brand_guide_lines
+        .logo_list
+          padding-bottom: get-vw(32px)
+          margin-bottom: get-vw(32px)
+          border-bottom: 1px solid rgba(89, 101, 123, 0.32)
+          .font_24
+            margin-bottom: get-vw(8px)
+          .logo_items
+            margin: get-vw(24px) -8px 0 -8px
+            +flex(center, flex-start)
+            .logos
+              flex: 0 0 33%
+              max-width: 33%
+              padding: 0 8px
+              margin-bottom: get-vw(16px)
+              img
+                width: 100%
+      &.gallery
+        .gallery_list
+          .gallery_item
+            padding-bottom: get-vw(16px)
+            margin-bottom: get-vw(32px)
+            border-bottom: 1px solid rgba(89, 101, 123, 0.32)
+            .font_24
+              margin-bottom: get-vw(8px)
+            .images
+              margin: get-vw(24px) -8px 0 -8px
+              +flex(center, flex-start)
+
+              .image
+                flex: 0 0 33%
+                max-width: 33%
+                padding: 0 8px
+                margin-bottom: get-vw(16px)
+                img
+                  width: 100%
+
+
+
+
+
+
+
+
