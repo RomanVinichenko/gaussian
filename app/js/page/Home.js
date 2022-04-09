@@ -123,6 +123,12 @@ export class Home {
 
     }
 
+    initCanvasSlider(){
+
+
+    }
+
+
     // downloadSection(){
     //
     //     const section = this.page.querySelector('.guide_form')
